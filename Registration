@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+ 
+
+</head>
+
+
+<body>
+
+
+    <h1>Create Account</h1>
+
+    <form id="form"  >
+
+<table id="table">
+    <tr>
+        <td>
+            <select name="user" id="user" required>
+                <option disabled selected>Select your choice</option>
+                <option value="client">Client</option>
+                <option value="host">Host</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="fname" value="" required> </td>
+        <td><input type="text" id="lname" value="" required> </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>Mobile </td>
+    </tr>
+    <tr>
+        <td><input type="text" id="email" value="" required> </td>
+        <td><input type="number" id="mobile" value="" required> </td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td>Confirm Password</td></br>
+    </tr>
+    <tr>
+        <td><input type="password" id="password" value=""
+                   title="6 to 12 letters only. With at least 1 lower case letter, 1 uppercase letter,
+                   1 number and one fo following special characters!@#$%" required></td>
+        <td><input type="password" id="pwdconfirm" value=""
+                   title="" required></td>
+    </tr>
+
+    <tr>
+        <td>Address</td>
+        <td>Country</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="address" value=" " required></td>
+        <td>
+            <Select>
+                <option disabled selected>Select a country</option>
+                <option>Australia</option>
+                <option>Britain</option>
+                <option>Canada</option>
+                <option>Denmark</option>
+                <option>Ethiopia</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Holland</option>
+                <option>Ireland</option>
+                <option>Jamaica</option>
+                <option>Nepal</option>
+                <option>Malaysia</option>
+                <option>Spain</option>
+                <option>Turkey</option>
+                <option>Vienna</option>
+
+            </Select>
+        </td>
+
+    </tr>
+
+</table>
+    <input type="submit"  name="submit" value="submit" />
+
+    </form>
+
+
+
+
+</body>
+</html>
