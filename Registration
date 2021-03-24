@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
- 
-
+    <link rel="stylesheet" type="text/css" href="RegFormat.css">
+    <script type="text/javascript" src="Password.js"></script>
 </head>
 
 
@@ -14,7 +14,8 @@
 
     <h1>Create Account</h1>
 
-    <form id="form"  >
+
+    <form id="form" action="/dashboard_page.php">
 
 <table id="table">
     <tr>
@@ -46,14 +47,15 @@
 
     <tr>
         <td>Password</td>
-        <td>Confirm Password</td></br>
+        <td>Confirm Password</td>
     </tr>
     <tr>
         <td><input type="password" id="password" value=""
                    title="6 to 12 letters only. With at least 1 lower case letter, 1 uppercase letter,
                    1 number and one fo following special characters!@#$%" required></td>
-        <td><input type="password" id="pwdconfirm" value=""
+        <td><input type="password" id="pwconfirm" value=""
                    title="" required></td>
+
     </tr>
 
     <tr>
@@ -61,9 +63,9 @@
         <td>Country</td>
     </tr>
     <tr>
-        <td><input type="text" id="address" value=" " required></td>
+        <td><input type="text" id="address" value="" required></td>
         <td>
-            <Select>
+            <Select name="country" id="country" required>
                 <option disabled selected>Select a country</option>
                 <option>Australia</option>
                 <option>Britain</option>
